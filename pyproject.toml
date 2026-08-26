@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "student-dropout-ml"
+version = "1.0.0"
+description = "Leakage-aware multiclass benchmark for student outcome prediction"
+requires-python = ">=3.10"
+dependencies = [
+  "imbalanced-learn>=0.13,<1",
+  "joblib>=1.4,<2",
+  "matplotlib>=3.9,<4",
+  "numpy>=1.26,<3",
+  "pandas>=2.2,<3",
+  "scikit-learn>=1.8,<2",
+  "seaborn>=0.13,<1",
+  "xgboost>=2.1,<4",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8,<9"]
+
+[project.scripts]
+student-dropout-benchmark = "student_dropout_predictor:main"
+
+[tool.setuptools]
+py-modules = ["student_dropout_predictor"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

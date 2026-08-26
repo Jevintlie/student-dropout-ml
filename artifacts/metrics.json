@@ -1,0 +1,20 @@
+[
+  {
+    "model": "random-forest",
+    "accuracy": 0.7536723163841808,
+    "precision_macro": 0.7107056732249877,
+    "recall_macro": 0.7019460407206418,
+    "f1_macro": 0.7030599057656186,
+    "roc_auc_ovr_macro": 0.8812330043490199,
+    "cv_f1_macro": 0.7159408156110584
+  },
+  {
+    "model": "logistic",
+    "accuracy": 0.7322033898305085,
+    "precision_macro": 0.7019382727731797,
+    "recall_macro": 0.6993618703026091,
+    "f1_macro": 0.6916465570231551,
+    "roc_auc_ovr_macro": 0.8666239280876934,
+    "cv_f1_macro": 0.7056761953163728
+  }
+]
