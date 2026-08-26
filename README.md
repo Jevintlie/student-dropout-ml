@@ -49,6 +49,8 @@ The checked-in artifacts come from the fast verification command above with a fi
 | Random Forest | 0.754 | 0.703 | 0.881 |
 | Logistic regression | 0.732 | 0.692 | 0.867 |
 
+![Quick-run confusion matrix for the selected Random Forest pipeline](artifacts/confusion_matrix.png)
+
 These figures verify that the pipeline runs correctly; they are not presented as exhaustive tuning or evidence of deployment readiness.
 
 ## Test
